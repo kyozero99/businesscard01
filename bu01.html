@@ -1,0 +1,27 @@
+# Creating a simple HTML template for the user's personal webpage
+html_template = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{name}'s Contact Page</title>
+</head>
+<body>
+    <h1>Welcome to {name}'s Contact Page</h1>
+    <p>Here you can find various ways to get in touch with me.</p>
+    
+    <h2>Contact Details:</h2>
+    <ul>
+        <li>Name: {name}</li>
+        <li>Position: {position}</li>
+        <li>Company: {company}</li>
+        <li>Phone: {phone}</li>
+        <li>Email: <a href="mailto:{email}">{email}</a></li>
+        <li>Website: <a href="{website}" target="_blank">{website}</a></li>
+    </ul>
+    
+    <h2>Social Media:</h2>
+    <p><a href="YOUR_LINE_LINK_HERE">Add me on LINE</a></p>
+    <p><a href="YOUR_TELEGRAM_LINK_HERE">Add me on Telegram</a></p>
+</body>
+</html>
